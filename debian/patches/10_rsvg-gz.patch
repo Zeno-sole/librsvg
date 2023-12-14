@@ -30,7 +30,7 @@ index 9106f9d..57d16ba 100644
  pub unsafe extern "C" fn rsvg_handle_new_with_flags(flags: RsvgHandleFlags) -> *const RsvgHandle {
      let obj = glib::Object::new::<CHandle>(&[("flags", &HandleFlags::from_bits_truncate(flags))])
 diff --git a/tests/api.c b/tests/api.c
-index 5c494a4..3c87c48 100644
+index 8e73c0c..ea6939d 100644
 --- a/tests/api.c
 +++ b/tests/api.c
 @@ -20,6 +20,9 @@
@@ -74,7 +74,7 @@ index 5c494a4..3c87c48 100644
  static void
  handle_read_stream_sync (void)
  {
-@@ -1670,6 +1697,7 @@ add_api_tests (void)
+@@ -1663,6 +1690,7 @@ add_api_tests (void)
      g_test_add_func ("/api/handle_new_from_data", handle_new_from_data);
      g_test_add_func ("/api/handle_new_from_gfile_sync", handle_new_from_gfile_sync);
      g_test_add_func ("/api/handle_new_from_stream_sync", handle_new_from_stream_sync);

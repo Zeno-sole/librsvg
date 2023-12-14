@@ -1,19 +1,8 @@
-librsvg (2.54.5+dfsg-3) unstable; urgency=medium
+librsvg (2.54.5+dfsg-1deepin1) unstable; urgency=medium
 
-  * Team upload
-  * d/p/debian/tests-Skip-known-failing-tests-on-i386.patch:
-    Skip two tests that have started failing on i386 since October 2022
-    (Mitigates: #1038252)
+  * Add loong64 support
 
- -- Simon McVittie <smcv@debian.org>  Sun, 18 Jun 2023 18:53:35 +0100
-
-librsvg (2.54.5+dfsg-2) unstable; urgency=medium
-
-  * Restore the librsvg2-tests build and corresponding autopkgtests
-    which were set up a while ago but disabled to avoid having the upload
-    blocked in the Debian NEW queue. Include the svg needed for the tests.
-
- -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 13 Jun 2023 17:25:43 +0200
+ -- Han Gao <gaohan@iscas.ac.cn>  Mon, 20 Mar 2023 14:20:12 +0800
 
 librsvg (2.54.5+dfsg-1) unstable; urgency=medium
 
